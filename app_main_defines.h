@@ -10,6 +10,8 @@
 #define APP_SUPPORT_I2C
 //#define APP_SUPPORT_I2C_EEPROM
 
+#define  APP_SUPPORT_SPI
+
 #define APP_SUPPORT_CLI
 
 #ifdef APP_SUPPORT_WIFI_PROV
