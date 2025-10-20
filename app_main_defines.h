@@ -7,7 +7,7 @@
 
 #define APP_SUPPORT_WIFI_PROV
 #define APP_SUPPORT_RFM69
-#define APP_SUPPORT_I2C
+//#define APP_SUPPORT_I2C
 //#define APP_SUPPORT_I2C_EEPROM
 
 #define  APP_SUPPORT_SPI
@@ -55,6 +55,13 @@
 #define GPIO_CONFIG_SWITCH 1
 #define GPIO_WIFI_PROV_SWT GPIO_CONFIG_SWITCH
 
+#define APP_SUPPORT_AM433_RX
+
+#ifdef APP_SUPPORT_AM433_RX
+#define GPIO_AM_RX_CS 7
+#define GPIO_AM_RX_DATA 47
+#endif
+
 #ifdef APP_SUPPORT_I2C
 #define GPIO_I2C_SDA 8
 #define GPIO_I2C_SCL 9
@@ -62,6 +69,7 @@
 #endif
 #endif // ESP32_GATEWAY_1V00
 
+#define APP_SUPPORT_RF433ANY
 
 #ifndef APP_MAIN_DEFINES_H
 #define APP_MAIN_DEFINES_H
